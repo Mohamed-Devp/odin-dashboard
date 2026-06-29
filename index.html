@@ -13,5 +13,245 @@
     <title>Dashboard | The Odin Project</title>
 </head>
 <body class="page">
+    <nav id="side-menu page__side-menu" class="side-menu" aria-label="Side Navigation" aria-hidden="true">
+        <button class="btn btn_type_icon" aria-hidden="true">
+            <img src="images/close.svg" alt="" class="btn__icon">
+        </button>
+        <a href="/" class="logo">
+            <img src="images/logo.png" alt="Dashboard" class="logo__img">
+        </a>
+        <div class="nav">
+            <ul class="nav__links">
+                <div class="nav__group">
+                    <li class="nav__item">
+                        <a href="/" class="nav__link">
+                            <img src="images/home.svg" alt="" class="nav__icon">
+                            Home
+                        </a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="/profile" class="nav__link">
+                            <img src="images/person.svg" alt="" class="nav__icon">
+                            Profile
+                        </a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="/messages" class="nav__link">
+                            <img src="images/message.svg" alt="" class="nav__icon">
+                            Messages
+                        </a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="/projects" class="nav__link">
+                            <img src="images/folder-open.svg" alt="" class="nav__icon">
+                            Projects
+                        </a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="/analytics" class="nav__link">
+                            <img src="images/chart.svg" alt="" class="nav__icon">
+                            Analytics
+                        </a>
+                    </li>
+                </div>
+                <div class="nav__group">
+                    <li class="nav__item">
+                        <a href="/help" class="nav__link">
+                            <img src="images/help.svg" alt="" class="nav__icon">
+                            Help
+                        </a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="/settings" class="nav__link">
+                            <img src="images/settings.svg" alt="" class="nav__icon">
+                            Settings
+                        </a>
+                    </li>
+                </div>
+            </ul>
+        </div>
+    </nav>
+    <header class="header page__header">
+        <button class="btn btn_type_icon" aria-expanded="false" aria-controls="side-menu">
+            <img src="images/menu.svg" alt="Open menu" class="btn__icon">
+        </button>
+        <div class="header__inner">
+            <search class="search">
+                <img src="images/search.svg" alt="" class="search__icon">
+                <input
+                    type="search"
+                    aria-label="Search through your projects"
+                    placeholder="Search projects..."
+                    class="inp search__inp"
+                />
+            </search>
+            <button class="btn btn_type_icon" aria-expanded="false">
+                <img src="images/notifications.svg" alt="Open Notifications" class="btn__icon">
+            </button>
+            <img src="images/avatar.png" alt="Your avatar" class="avatar avatar_size_sm">
+        </div>
+    </header>
+    <main class="main">
+        <div class="topbar">
+            <div class="topbar__user">
+                <img src="images/avatar.png" alt="Your avatar" class="avatar avatar_size_lg">
+                <p class="topbar__greeting">
+                    HI THERE,<br>
+                    <span class="topbar__full-name">Morgan Oakley (@morgan)</span>
+                </p>
+            </div>
+            <div class="topbar__actions">
+                <button class="btn btn_type_text btn_style_filled">
+                    New
+                </button>
+                <button class="btn btn_type_text btn_style_outlined">
+                    Upload
+                </button>
+                <button class="btn btn_type_text btn_style_outlined">
+                    Share
+                </button>
+            </div>
+        </div>
+        <div class="main__content">
+            <section class="section">
+                <h2 class="section__heading">Your Projects</h2>
+                <div class="section__projects">
+                    <article class="card">
+                        <h3 class="card__heading">Super Cool Project</h3>
+                        <p class="card__content">
+                            Sed tempus ut lacus ut scelerisque. Suspendisse
+                            sollicitudin nibh erat, id facilisis felis
+                            accumsannec.
+                        </p>
+                        <div class="card__actions">
+                            <button class="btn btn_type_icon">
+                                <img src="images/star.svg" alt="Mark as favorite" class="btn__icon">
+                            </button>
+                            <button class="btn btn_type_icon">
+                                <img src="images/view.svg" alt="View" class="btn__icon">
+                            </button>
+                            <button class="btn btn_type_icon">
+                                <img src="images/share.svg" alt="Share" class="btn__icon">
+                            </button>
+                        </div>
+                    </article>
+                    <article class="card">
+                        <h3 class="card__heading">Less Cool Project</h3>
+                        <p class="card__content">
+                            Nullam condimentum ipsum ut lectus vehicula
+                            consectetur. Quisque sed dolor tincidunt,
+                            consectetur sapien et, facilisis dolor.
+                        </p>
+                        <div class="card__actions">
+                            <button class="btn btn_type_icon">
+                                <img src="images/star.svg" alt="Mark as favorite" class="btn__icon">
+                            </button>
+                            <button class="btn btn_type_icon">
+                                <img src="images/view.svg" alt="View" class="btn__icon">
+                            </button>
+                            <button class="btn btn_type_icon">
+                                <img src="images/share.svg" alt="Share" class="btn__icon">
+                            </button>
+                        </div>
+                    </article>
+                    <article class="card">
+                        <h3 class="card__heading">Easy Peasy App</h3>
+                        <p class="card__content">
+                            Etiam cursus eros ac efficitur fringilla. Vestibulum
+                            dignissim urna eget accumsan aliquam. Curabitur
+                            dignissim nisi in tortor commodo, ac bibendum magna
+                            tincidunt.
+                        </p>
+                        <div class="card__actions">
+                            <button class="btn btn_type_icon">
+                                <img src="images/star.svg" alt="Mark as favorite" class="btn__icon">
+                            </button>
+                            <button class="btn btn_type_icon">
+                                <img src="images/view.svg" alt="View" class="btn__icon">
+                            </button>
+                            <button class="btn btn_type_icon">
+                                <img src="images/share.svg" alt="Share" class="btn__icon">
+                            </button>
+                        </div>
+                    </article>
+                </div>
+            </section>
+            <div class="main__column">
+                <section class="section">
+                    <h2 class="section__heading">Announcements</h2>
+                    <ul class="list">
+                        <li class="list__item">
+                            <a href="#" class="list__link">
+                                <h3 class="list__title">Site maintenance</h3>
+                            </a>
+                            <p class="list__text">
+                                Vestibulum condimentum tellus lacus, in accumsan
+                                elit maximus ac. Donec hendrerit sodales congue...
+                            </p>
+                        </li>
+                        <li class="list__item">
+                            <a href="#" class="list__link">
+                                <h3 class="list__title">Community share day</h3>
+                            </a>
+                            <p class="list__text">
+                                Nam vel lectus tincidunt, rutrum nulla eu, ornare
+                                libero. Aliquam dictum accumsan porttitor...
+                            </p>
+                        </li>
+                        <li class="list__item">
+                            <a href="#" class="list__link">
+                                <h3 class="list__title">Updated privacy policy</h3>
+                            </a>
+                            <p class="list__text">
+                                Phasellus efficitur nisi eget elit consectetur,
+                                eget condimentum ante auctor.
+                            </p>
+                        </li>
+                    </ul>
+                </section>
+                <aside class="section">
+                    <h2 class="section__heading">Trending</h2>
+                    <ul class="list">
+                        <li class="list__row">
+                            <img src="images/avatar.png" alt="" class="avatar avatar_size_sm">
+                            <div class="list__content">
+                                <a href="#" class="list__link">
+                                    <p class="list__username">@tengan</p>
+                                </a>
+                                <p class="list__text">World Peace Builder</p>
+                            </div>
+                        </li>
+                        <li class="list__row">
+                            <img src="images/avatar.png" alt="" class="avatar avatar_size_sm">
+                            <div class="list__content">
+                                <a href="#" class="list__link">
+                                    <p class="list__username">@morgan</p>
+                                </a>
+                                <p class="list__text">Super Cool Project</p>
+                            </div>
+                        </li>
+                        <li class="list__row">
+                            <img src="images/avatar.png" alt="" class="avatar avatar_size_sm">
+                            <div class="list__content">
+                                <a href="#" class="list__link">
+                                    <p class="list__username">@kendall</p>
+                                </a>
+                                <p class="list__text">Life Changing App</p>
+                            </div>
+                        </li>
+                        <li class="list__row">
+                            <img src="images/avatar.png" alt="" class="avatar avatar_size_sm">
+                            <div class="list__content">
+                                <a href="#" class="list__link">
+                                    <p class="list__username">@alex</p>
+                                </a>
+                                <p class="list__text">No Traffic Maker</p>
+                            </div>
+                        </li>
+                    </ul>
+                </aside>
+            </div>
+        </div>
+    </main>
 </body>
 </html>
