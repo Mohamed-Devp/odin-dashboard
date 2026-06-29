@@ -1,0 +1,42 @@
+/* || RESET */
+
+*, *::before, *::after {
+    box-sizing: border-box;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+}
+
+img, video {
+    display: block;
+    max-width: 100%;
+}
+
+input, button, textarea, select {
+    border: none;
+    font: inherit;
+    background-color: initial;
+}
+
+p, label, legend, h1, h2, h3 {
+    overflow-wrap: break-word;
+}
+
+p, label, legend {
+    text-wrap: pretty;
+    line-height: 1.5;
+}
+
+h1, h2, h3 {
+    text-wrap: balance;
+}
+
+a {
+    text-decoration: none;
+}
+
+ul, ol {
+    list-style-type: none;
+}
