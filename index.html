@@ -16,66 +16,62 @@
     <title>Dashboard | The Odin Project</title>
 </head>
 <body class="page">
-    <nav id="side-menu page__side-menu" class="side-menu" aria-label="Side Navigation" aria-hidden="true">
-        <button class="btn btn_type_icon" aria-hidden="true">
-            <img src="images/close.svg" alt="" class="btn__icon">
-        </button>
+    <nav id="sidemenu" class="sidemenu page__sidemenu" aria-label="Side Navigation" aria-hidden="true">
+        <div class="sidemenu__overlay"></div>
         <a href="/" class="logo">
             <img src="images/logo.png" alt="Dashboard" class="logo__img">
         </a>
-        <div class="nav">
-            <ul class="nav__links">
-                <div class="nav__group">
-                    <li class="nav__item">
-                        <a href="/" class="nav__link">
-                            <img src="images/home.svg" alt="" class="nav__icon">
-                            Home
-                        </a>
-                    </li>
-                    <li class="nav__item">
-                        <a href="/profile" class="nav__link">
-                            <img src="images/person.svg" alt="" class="nav__icon">
-                            Profile
-                        </a>
-                    </li>
-                    <li class="nav__item">
-                        <a href="/messages" class="nav__link">
-                            <img src="images/message.svg" alt="" class="nav__icon">
-                            Messages
-                        </a>
-                    </li>
-                    <li class="nav__item">
-                        <a href="/projects" class="nav__link">
-                            <img src="images/folder-open.svg" alt="" class="nav__icon">
-                            Projects
-                        </a>
-                    </li>
-                    <li class="nav__item">
-                        <a href="/analytics" class="nav__link">
-                            <img src="images/chart.svg" alt="" class="nav__icon">
-                            Analytics
-                        </a>
-                    </li>
-                </div>
-                <div class="nav__group">
-                    <li class="nav__item">
-                        <a href="/help" class="nav__link">
-                            <img src="images/help.svg" alt="" class="nav__icon">
-                            Help
-                        </a>
-                    </li>
-                    <li class="nav__item">
-                        <a href="/settings" class="nav__link">
-                            <img src="images/settings.svg" alt="" class="nav__icon">
-                            Settings
-                        </a>
-                    </li>
-                </div>
-            </ul>
-        </div>
+        <ul class="nav sidemenu__nav">
+            <div class="nav__group">
+                <li class="nav__item">
+                    <a href="/" class="nav__link">
+                        <img src="images/home.svg" alt="" class="nav__icon">
+                        Home
+                    </a>
+                </li>
+                <li class="nav__item">
+                    <a href="/profile" class="nav__link">
+                        <img src="images/person.svg" alt="" class="nav__icon">
+                        Profile
+                    </a>
+                </li>
+                <li class="nav__item">
+                    <a href="/messages" class="nav__link">
+                        <img src="images/message.svg" alt="" class="nav__icon">
+                        Messages
+                    </a>
+                </li>
+                <li class="nav__item">
+                    <a href="/projects" class="nav__link">
+                        <img src="images/folder-open.svg" alt="" class="nav__icon">
+                        Projects
+                    </a>
+                </li>
+                <li class="nav__item">
+                    <a href="/analytics" class="nav__link">
+                        <img src="images/chart.svg" alt="" class="nav__icon">
+                        Analytics
+                    </a>
+                </li>
+            </div>
+            <div class="nav__group">
+                <li class="nav__item">
+                    <a href="/help" class="nav__link">
+                        <img src="images/help.svg" alt="" class="nav__icon">
+                        Help
+                    </a>
+                </li>
+                <li class="nav__item">
+                    <a href="/settings" class="nav__link">
+                        <img src="images/settings.svg" alt="" class="nav__icon">
+                        Settings
+                    </a>
+                </li>
+            </div>
+        </ul>
     </nav>
     <header class="header page__header">
-        <button class="btn btn_type_icon" aria-expanded="false" aria-controls="side-menu">
+        <button class="btn btn_type_icon" aria-expanded="false" aria-controls="sidemenu">
             <img src="images/menu.svg" alt="Open menu" class="btn__icon">
         </button>
         <div class="header__inner">
