@@ -16,53 +16,53 @@
     <title>Dashboard | The Odin Project</title>
 </head>
 <body class="page">
-    <nav id="sidemenu" class="sidemenu page__sidemenu" aria-label="Side Navigation" aria-hidden="true">
+    <nav id="sidemenu" class="sidemenu sidemenu_hidden page__sidemenu u-flex-column" aria-label="Side Navigation" aria-hidden="true">
         <div class="sidemenu__overlay"></div>
         <a href="/" class="logo">
             <img src="images/logo.png" alt="Dashboard" class="logo__img">
         </a>
-        <ul class="nav sidemenu__nav">
-            <div class="nav__group">
+        <ul class="nav sidemenu__nav u-flex-column">
+            <div class="nav__group u-flex-column">
                 <li class="nav__item">
-                    <a href="/" class="nav__link">
+                    <a href="/" class="nav__link nav__link_selected u-flex-row">
                         <img src="images/home.svg" alt="" class="nav__icon">
                         Home
                     </a>
                 </li>
                 <li class="nav__item">
-                    <a href="/profile" class="nav__link">
+                    <a href="/profile" class="nav__link u-flex-row">
                         <img src="images/person.svg" alt="" class="nav__icon">
                         Profile
                     </a>
                 </li>
                 <li class="nav__item">
-                    <a href="/messages" class="nav__link">
+                    <a href="/messages" class="nav__link u-flex-row">
                         <img src="images/message.svg" alt="" class="nav__icon">
                         Messages
                     </a>
                 </li>
                 <li class="nav__item">
-                    <a href="/projects" class="nav__link">
+                    <a href="/projects" class="nav__link u-flex-row">
                         <img src="images/folder-open.svg" alt="" class="nav__icon">
                         Projects
                     </a>
                 </li>
                 <li class="nav__item">
-                    <a href="/analytics" class="nav__link">
+                    <a href="/analytics" class="nav__link u-flex-row">
                         <img src="images/chart.svg" alt="" class="nav__icon">
                         Analytics
                     </a>
                 </li>
             </div>
-            <div class="nav__group">
+            <div class="nav__group u-flex-column">
                 <li class="nav__item">
-                    <a href="/help" class="nav__link">
+                    <a href="/help" class="nav__link u-flex-row">
                         <img src="images/help.svg" alt="" class="nav__icon">
                         Help
                     </a>
                 </li>
                 <li class="nav__item">
-                    <a href="/settings" class="nav__link">
+                    <a href="/settings" class="nav__link u-flex-row">
                         <img src="images/settings.svg" alt="" class="nav__icon">
                         Settings
                     </a>
@@ -72,10 +72,10 @@
     </nav>
     <header class="header page__header">
         <button class="btn btn_type_icon" aria-expanded="false" aria-controls="sidemenu">
-            <img src="images/menu.svg" alt="Open menu" class="btn__icon">
+            <img src="images/menu.svg" alt="Open menu" class="btn__icon btn__icon_size_lg">
         </button>
-        <div class="header__inner">
-            <search class="search">
+        <div class="header__inner u-flex-row">
+            <search class="search header__search">
                 <img src="images/search.svg" alt="" class="search__icon">
                 <input
                     type="search"
@@ -85,14 +85,14 @@
                 />
             </search>
             <button class="btn btn_type_icon" aria-expanded="false">
-                <img src="images/notifications.svg" alt="Open Notifications" class="btn__icon">
+                <img src="images/notifications.svg" alt="Open Notifications" class="btn__icon btn__icon_size_lg">
             </button>
             <img src="images/avatar.png" alt="Your avatar" class="avatar avatar_size_sm">
         </div>
     </header>
     <main class="main">
-        <div class="topbar">
-            <div class="topbar__user">
+        <div class="topbar u-flex-row">
+            <div class="topbar__user u-flex-row">
                 <img src="images/avatar.png" alt="Your avatar" class="avatar avatar_size_lg">
                 <p class="topbar__greeting">
                     HI THERE,<br>
@@ -112,48 +112,48 @@
             </div>
         </div>
         <div class="main__content">
-            <section class="section">
+            <section class="section u-flex-column">
                 <h2 class="section__heading">Your Projects</h2>
                 <div class="section__projects">
-                    <article class="card">
+                    <article class="card card_style_stripe u-flex-column">
                         <h3 class="card__heading">Super Cool Project</h3>
                         <p class="card__content">
                             Sed tempus ut lacus ut scelerisque. Suspendisse
                             sollicitudin nibh erat, id facilisis felis
                             accumsannec.
                         </p>
-                        <div class="card__actions">
+                        <div class="card__actions u-flex-row">
                             <button class="btn btn_type_icon">
-                                <img src="images/star.svg" alt="Mark as favorite" class="btn__icon">
+                                <img src="images/star.svg" alt="Mark as favorite" class="btn__icon btn__icon_size_sm">
                             </button>
                             <button class="btn btn_type_icon">
-                                <img src="images/view.svg" alt="View" class="btn__icon">
+                                <img src="images/view.svg" alt="View" class="btn__icon btn__icon_size_sm">
                             </button>
                             <button class="btn btn_type_icon">
-                                <img src="images/share.svg" alt="Share" class="btn__icon">
+                                <img src="images/share.svg" alt="Share" class="btn__icon btn__icon_size_sm">
                             </button>
                         </div>
                     </article>
-                    <article class="card">
+                    <article class="card card_style_stripe u-flex-column">
                         <h3 class="card__heading">Less Cool Project</h3>
                         <p class="card__content">
                             Nullam condimentum ipsum ut lectus vehicula
                             consectetur. Quisque sed dolor tincidunt,
                             consectetur sapien et, facilisis dolor.
                         </p>
-                        <div class="card__actions">
+                        <div class="card__actions u-flex-row">
                             <button class="btn btn_type_icon">
-                                <img src="images/star.svg" alt="Mark as favorite" class="btn__icon">
+                                <img src="images/star.svg" alt="Mark as favorite" class="btn__icon btn__icon_size_sm">
                             </button>
                             <button class="btn btn_type_icon">
-                                <img src="images/view.svg" alt="View" class="btn__icon">
+                                <img src="images/view.svg" alt="View" class="btn__icon btn__icon_size_sm">
                             </button>
                             <button class="btn btn_type_icon">
-                                <img src="images/share.svg" alt="Share" class="btn__icon">
+                                <img src="images/share.svg" alt="Share" class="btn__icon btn__icon_size_sm">
                             </button>
                         </div>
                     </article>
-                    <article class="card">
+                    <article class="card card_style_stripe u-flex-column">
                         <h3 class="card__heading">Easy Peasy App</h3>
                         <p class="card__content">
                             Etiam cursus eros ac efficitur fringilla. Vestibulum
@@ -161,25 +161,25 @@
                             dignissim nisi in tortor commodo, ac bibendum magna
                             tincidunt.
                         </p>
-                        <div class="card__actions">
+                        <div class="card__actions u-flex-row">
                             <button class="btn btn_type_icon">
-                                <img src="images/star.svg" alt="Mark as favorite" class="btn__icon">
+                                <img src="images/star.svg" alt="Mark as favorite" class="btn__icon btn__icon_size_sm">
                             </button>
                             <button class="btn btn_type_icon">
-                                <img src="images/view.svg" alt="View" class="btn__icon">
+                                <img src="images/view.svg" alt="View" class="btn__icon btn__icon_size_sm">
                             </button>
                             <button class="btn btn_type_icon">
-                                <img src="images/share.svg" alt="Share" class="btn__icon">
+                                <img src="images/share.svg" alt="Share" class="btn__icon btn__icon_size_sm">
                             </button>
                         </div>
                     </article>
                 </div>
             </section>
-            <div class="main__column">
-                <section class="section">
+            <div class="main__column u-flex-column">
+                <section class="section u-flex-column">
                     <h2 class="section__heading">Announcements</h2>
-                    <ul class="list">
-                        <li class="list__item">
+                    <ul class="list u-flex-column">
+                        <li class="list__item list__item_separated u-flex-column">
                             <a href="#" class="list__link">
                                 <h3 class="list__title">Site maintenance</h3>
                             </a>
@@ -188,7 +188,7 @@
                                 elit maximus ac. Donec hendrerit sodales congue...
                             </p>
                         </li>
-                        <li class="list__item">
+                        <li class="list__item list__item_separated u-flex-column">
                             <a href="#" class="list__link">
                                 <h3 class="list__title">Community share day</h3>
                             </a>
@@ -197,7 +197,7 @@
                                 libero. Aliquam dictum accumsan porttitor...
                             </p>
                         </li>
-                        <li class="list__item">
+                        <li class="list__item u-flex-column">
                             <a href="#" class="list__link">
                                 <h3 class="list__title">Updated privacy policy</h3>
                             </a>
@@ -208,41 +208,41 @@
                         </li>
                     </ul>
                 </section>
-                <aside class="section">
+                <aside class="section u-flex-column">
                     <h2 class="section__heading">Trending</h2>
-                    <ul class="list">
-                        <li class="list__row">
-                            <img src="images/avatar.png" alt="" class="avatar avatar_size_sm">
+                    <ul class="list u-flex-column">
+                        <li class="list__row u-flex-row">
+                            <img src="images/avatar.png" alt="" class="avatar avatar_size_md">
                             <div class="list__content">
                                 <a href="#" class="list__link">
-                                    <p class="list__username">@tengan</p>
+                                    <p class="list__bold-text">@tengan</p>
                                 </a>
                                 <p class="list__text">World Peace Builder</p>
                             </div>
                         </li>
-                        <li class="list__row">
-                            <img src="images/avatar.png" alt="" class="avatar avatar_size_sm">
+                        <li class="list__row u-flex-row">
+                            <img src="images/avatar.png" alt="" class="avatar avatar_size_md">
                             <div class="list__content">
                                 <a href="#" class="list__link">
-                                    <p class="list__username">@morgan</p>
+                                    <p class="list__bold-text">@morgan</p>
                                 </a>
                                 <p class="list__text">Super Cool Project</p>
                             </div>
                         </li>
-                        <li class="list__row">
-                            <img src="images/avatar.png" alt="" class="avatar avatar_size_sm">
+                        <li class="list__row u-flex-row">
+                            <img src="images/avatar.png" alt="" class="avatar avatar_size_md">
                             <div class="list__content">
                                 <a href="#" class="list__link">
-                                    <p class="list__username">@kendall</p>
+                                    <p class="list__bold-text">@kendall</p>
                                 </a>
                                 <p class="list__text">Life Changing App</p>
                             </div>
                         </li>
-                        <li class="list__row">
-                            <img src="images/avatar.png" alt="" class="avatar avatar_size_sm">
+                        <li class="list__row u-flex-row">
+                            <img src="images/avatar.png" alt="" class="avatar avatar_size_md">
                             <div class="list__content">
                                 <a href="#" class="list__link">
-                                    <p class="list__username">@alex</p>
+                                    <p class="list__bold-text">@alex</p>
                                 </a>
                                 <p class="list__text">No Traffic Maker</p>
                             </div>
