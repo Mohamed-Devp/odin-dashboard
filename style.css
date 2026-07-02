@@ -220,9 +220,12 @@ ul, ol {
     inset: 0 20% 0 0;
     z-index: 10;
     max-width: 24rem;
+    background-color: hsl(222 47% 11%);
+}
+
+.page__sidemenu {
     gap: 1.75rem;
     padding: 1.25rem;
-    background-color: hsl(222 47% 11%);
 }
 
 .sidemenu_hidden {
@@ -302,9 +305,12 @@ ul, ol {
     align-items: center;
     flex-wrap: wrap;
     gap: 1rem;
-    padding: 1rem;
     background-color: hsl(0 100% 100%);
     box-shadow: 0 4px 8px -2px hsl(0 0% 0% / 0.1);
+}
+
+.page__topbar {
+    padding: 1rem;
 }
 
 .topbar__user {
@@ -333,6 +339,10 @@ ul, ol {
     width: min(100%, 24rem);
 }
 
+.page__main {
+    overflow: auto;
+}
+
 .main__content {
     display: grid;
     grid-template-columns: 1fr;
@@ -348,6 +358,10 @@ ul, ol {
     gap: 1rem;
 }
 
+.section__list {
+    max-width: 24rem;
+}
+
 .section__heading {
     font-size: 1.25rem;
     font-weight: 700;
@@ -358,4 +372,119 @@ ul, ol {
     display: grid;
     grid-template-columns: 1fr;
     gap: 1rem;
+}
+
+/* || MEDIA QUERIES */
+
+@media screen and (min-width: 32rem) {
+    .main__content {
+        gap: 1.5rem;
+    }
+
+    .main__column {
+        gap: 1.5rem;
+    }
+
+    .section__projects {
+        grid-template-columns: repeat(auto-fill, minmax(20rem, 1fr));
+        gap: 1.5rem;
+    }
+}
+
+@media screen and (min-width: 48rem) {
+    .main__content {
+        display: grid;
+        grid-template-columns: 2fr minmax(20rem, 24rem);
+    }
+}
+
+@media screen and (min-width: 64rem) {
+    .btn_label_toggle {
+        display: none;
+    }
+
+    .avatar_size_sm {
+        width: 3rem;
+    }
+
+    .avatar_size_lg {
+        width: 4.75rem;
+    }
+
+    .page {
+        display: grid;
+        grid-template-columns: 18rem 1fr;
+        grid-template-rows: auto 1fr;
+    }
+
+    .page__sidemenu {
+        display: flex;
+        position: static;
+        grid-row: 1 / -1;
+    }
+
+    .sidemenu__overlay {
+        display: none;
+    }
+}
+
+@media screen and (min-width: 80rem) {
+    .section {
+        gap: 1.25rem;
+    }
+
+    .section__heading {
+        font-size: 1.5rem;
+    }
+
+    .section__projects {
+        grid-template-columns: repeat(auto-fill, minmax(24rem, 1fr));
+    }
+
+    .card {
+        min-height: 15rem;
+        gap: 0.75rem;
+        padding: 1.75rem;
+    }
+
+    .card__heading {
+        font-size: 1.25rem;
+    }
+
+    .card__content {
+        font-size: 1rem;
+    }
+    
+    .page {
+        grid-template-columns: 24rem 1fr;
+    }
+
+    .page__sidemenu {
+        gap: 2rem;
+        padding: 1.5rem;
+    }
+
+    .page__header {
+        padding: 1rem 2.875rem;
+    }
+
+    .header__inner {
+        gap: 1.25rem;
+    }
+
+    .page__topbar {
+        padding: 1rem 2.875rem;
+    }
+
+    .topbar__user {
+        gap: 1.375rem;
+    }
+
+    .topbar__actions {
+        gap: 1rem;
+    }
+
+    .main__content {
+        padding: 2rem 1.5rem;
+    }
 }
